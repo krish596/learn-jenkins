@@ -27,14 +27,6 @@ pipeline {
             }
         }
 
-        stage('deploy') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-
-
-
 
     }
 }
