@@ -23,13 +23,13 @@ pipeline {
 
         stage('code security') {
             steps {
-                echo00 'Hello World'
+                echo 'Hello World'
             }
         }
 
         stage('deploy') {
             steps {
-                echo00 'Hello World'
+                echo 'Hello World'
             }
         }
 
