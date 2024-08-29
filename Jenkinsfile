@@ -14,9 +14,10 @@ pipeline {
 
     post {
         always {
-            echo 'I will always say Hello again!'
-            error 'this is an error'
-            echo 'hello world'
+            echo 'post'
+            // I will always say Hello again
+
+            // hello world
         }
     }
 }
