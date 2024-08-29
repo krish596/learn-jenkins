@@ -9,24 +9,5 @@ pipeline {
         }
 
 
-        stage('test') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-
-        stage('code quality') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-
-        stage('code security') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-
-
     }
 }
