@@ -28,7 +28,11 @@ pipeline {
     tools {
         maven 'maven'
     }
+    input {
+        message "Should we continue?"
+        ok "Yes, we should."
 
+    }
     stages {
         stage('compile') {
             steps {
