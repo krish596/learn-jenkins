@@ -1,7 +1,9 @@
 pipeline {
 //   agent any
     agent { node { label 'workstation' } }
-
+    environment {
+    ssh = credentials('centos-ssh')
+    }
     stages {
         stage('compile') {
             steps {
@@ -20,4 +22,5 @@ pipeline {
             // hello world
         }
     }
+    env ssh
 }
