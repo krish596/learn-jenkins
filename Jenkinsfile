@@ -115,7 +115,7 @@
 node('workstation') {
     def x: integer = 10
     stage('Test') {
-        sh 'echo ${x}'
+        print x
     }
 
 }
