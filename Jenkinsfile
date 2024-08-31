@@ -11,6 +11,7 @@ pipeline {
                // echo 'Hello World'
                echo Test_Url
                echo SSH
+               sh env
             }
         }
 
