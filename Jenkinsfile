@@ -28,19 +28,22 @@ pipeline {
     tools {
         maven 'maven'
     }
-    input {
-        message "Should we continue?"
-        ok "Yes, we should."
 
-    }
     stages {
         stage('compile') {
+
             steps {
                // echo 'Hello World'
                echo Test_Url
                echo SSH
                sh 'env'
                sh 'ansible -i 172.31.44.244, all -e ansible_user=${SSH_USR} -e ansible_password=${SSH_PSW} -m ping'
+            }
+
+            input {
+                message "Should we continue?"
+                ok "Yes, we should."
+
             }
         }
 
