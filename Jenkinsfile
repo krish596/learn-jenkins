@@ -112,3 +112,10 @@
 //     }
 // }
 
+node('workstation') {
+    def x:Integer = 10
+    stage('Test') {
+        print x
+    }
+
+}
