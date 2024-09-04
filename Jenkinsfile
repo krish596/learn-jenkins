@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-
+ //   agent any
+    agent { node { label 'workstation' } }
     stages {
         stage('Compile') {
             steps {
@@ -8,23 +8,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Hello World'
-            }
-        }
 
-        stage('Code Quality') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-
-        stage('Code Security') {
-            steps {
-                echo 'Hello World'
-            }
-        }
 
 
     }
