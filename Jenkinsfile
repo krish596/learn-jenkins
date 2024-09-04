@@ -26,11 +26,7 @@ pipeline {
             }
         }
 
-        stage('Release') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+
     }
 }
 
